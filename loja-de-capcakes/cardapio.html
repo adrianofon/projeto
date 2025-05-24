@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Loja de Cupcakes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="menu">
+    <header>
+        <img src="imagens/LOGO1.jpg" alt="Logo da Loja de Cupcakes">
+        <h1>Cardápio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cardapio.html" class="active">Cardápio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div id="carrinho" class="carrinho">
+            <h2>Seu Carrinho</h2>
+            <ul id="itens-carrinho">
+                <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
+            </ul>
+            <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+        
+            <!-- Adicione as opções de pagamento aqui -->
+            <div id="opcoes-pagamento">
+                <h3>Opções de Pagamento</h3>
+                <label>
+                    <input type="radio" name="forma-pagamento" value="pix"> Pix
+                </label>
+                <label>
+                    <input type="radio" name="forma-pagamento" value="cartao"> Cartão de Crédito
+                </label>
+                <label>
+                    <input type="radio" name="forma-pagamento" value="boleto"> Boleto Bancário
+                </label>
+            </div>
+        
+            <!-- Adicione um botão para concluir a compra -->
+            <button id="concluir-compra">Concluir Compra</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Cardápio Completo</h2>
+        <section class="best-sellers" id="cardapio-container">
+            <section class="cupcakes">
+                <section class="cupcake">
+                    <img src="imagens/cupcake.jpg" alt="Cupcake de Chocolate">
+                    <h3>Cupcake de Chocolate</h3>
+                    <p>Delicioso cupcake de chocolate com cobertura de ganache.</p>
+                    <p class="price">R$ 5,00</p>
+                    <button id="adicionar-ao-carrinho-1" data-nome="Cupcake de Chocolate" data-preco="5.00"data-codigo="COD001">Adicionar ao Carrinho</button>
+                </section>
+    
+                <section class="cupcake">                
+                    <img src="imagens/cupcake2.jpg" alt="Cupcake de Morango">
+                    <h3>Cupcake de Morango</h3>
+                    <p>Cupcake de morango com recheio de geleia de morango.</p>
+                    <p class="price">R$ 5,00</p>
+                    <button id="adicionar-ao-carrinho-2" data-nome="Cupcake de Morango" data-preco="5.00" data-codigo="COD002">Adicionar ao Carrinho</button>
+                </section>
+    
+                <section class="cupcake">
+                    <img src="imagens/cupcake3.jpg" alt="Cupcake de Baunilha">
+                    <h3>Cupcake de Baunilha</h3>
+                    <p>Cupcake de baunilha com cobertura de chantilly.</p>
+                    <p class="price">R$ 5,00</p>
+                    <button id="adicionar-ao-carrinho-3" data-nome="Cupcake de Baunilha" data-preco="5.00" data-codigo="COD003">Adicionar ao Carrinho</button>
+                </section>
+    
+                <section class="cupcake">
+                    <img src="imagens/cupcake4.jpg" alt="Cupcake Red Velvet">
+                    <h3>Cupcake Red Velvet</h3>
+                    <p>Cupcake red velvet com cream cheese frosting.</p>
+                    <p class="price">R$ 5,00</p>
+                    <button id="adicionar-ao-carrinho-4" data-nome="Cupcake Red Velvet" data-preco="5.00" data-codigo="COD004">Adicionar ao Carrinho</button>
+                </section>
+
+                <section class="cupcake">
+                    <img src="imagens/cupcake5.jpg" alt="Cupcake de Framboesa">
+                    <h3>Cupcake de Framboesa</h3>
+                    <p>Cupcake de framboesa com recheio de framboesa e cobertura de chantilly.</p>
+                    <p class="price">R$ 5,00</p>
+                    <button id="adicionar-ao-carrinho-5" data-nome="Cupcake de Framboesa" data-preco="5.00" data-codigo="COD005">Adicionar ao Carrinho</button>
+                </section>
+            
+                <section class="cupcake">
+                    <img src="imagens/cupcake6.jpg" alt="Cupcake de Limão">
+                    <h3>Cupcake de Limão</h3>
+                    <p>Cupcake de limão com cobertura de creme de limão.</p>
+                    <p class="price">R$ 5,00</p>
+                    <button id="adicionar-ao-carrinho-6" data-nome="Cupcake de Limão" data-preco="5.00" data-codigo="COD006">Adicionar ao Carrinho</button>
+                </section>
+
+                <section class="cupcake">
+                    <img src="imagens/cupcake7.jpg" alt="Cupcake de Coco">
+                    <h3>Cupcake de Coco</h3>
+                    <p>Cupcake de coco com cobertura de buttercream de coco.</p>
+                    <p class="price">R$ 5,00</p>
+                    <button id="adicionar-ao-carrinho-7" data-nome="Cupcake de Coco" data-preco="5.00" data-codigo="COD007">Adicionar ao Carrinho</button>
+                </section>
+
+                <section class="cupcake">
+                    <img src="imagens/cupcake8.jpg" alt="Cupcake de Mocha">
+                    <h3>Cupcake de Mocha</h3>
+                    <p>Cupcake de mocha com ganache de café.</p>
+                    <p class="price">R$ 5,00</p>
+                    <button id="adicionar-ao-carrinho-8" data-nome="Cupcake de Mocha" data-preco="5.00" data-codigo="COD008">Adicionar ao Carrinho</button>
+                </section>
+
+                <section class="cupcake">
+                    <img src="imagens/cupcake9.jpg" alt="Cupcake de Pistache">
+                    <h3>Cupcake de Pistache</h3>
+                    <p>Cupcake de pistache com cobertura de creme de pistache.</p>
+                    <p class="price">R$ 5,00</p>
+                    <button id="adicionar-ao-carrinho-9" data-nome="Cupcake de Pistache" data-preco="5.00" data-codigo="COD009">Adicionar ao Carrinho</button>
+                </section>
+
+                <section class="cupcake">
+                    <img src="imagens/cupcake10.jpg" alt="Cupcake de Cenoura">
+                    <h3>Cupcake de Cenoura</h3>
+                    <p>Cupcake de cenoura com cobertura de cream cheese.</p>
+                    <p class="price">R$ 5,00</p>
+                    <button id="adicionar-ao-carrinho-10" data-nome="Cupcake de Cenoura" data-preco="5.00" data-codigo="COD010">Adicionar ao Carrinho</button>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vanguarda Cupcakes</p>
+    </footer>
+    <script src="js/carrinho.js"></script>
+</body>
+</html>
+
